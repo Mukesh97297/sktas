@@ -11,16 +11,16 @@ function Footer() {
             <div className=' px-3 flex items-center justify-between  '>
                 <div className='flex items-center gap-5'>
                 <Link href="/" className='hover:scale-125 duration-150'>
-                   <Image src="/images/Vector (6).png" height={24} width={24} alt="" />
+                   <Image src="/images/Vector (6).png" height={20} width={20} alt="" />
                 </Link>
                 <Link href="/" className='hover:scale-125 duration-150'>
-                   <Image src="/images/Vector (7).png" height={24} width={24} alt="" />
+                   <Image src="/images/Vector (7).png" height={18} width={15} alt="" />
                 </Link>
                 <Link href="/" className='hover:scale-125 duration-150'>
-                   <Image src="/images/Vector (8).png" height={24} width={24} alt="" />
+                   <Image src="/images/Vector (8).png" height={18} width={17} alt="" />
                 </Link>
                 <Link href="/" className='hover:scale-125 duration-150'>
-                   <Image src="/images/facebook.png" height={24} width={24} alt="" />
+                   <Image src="/images/facebook.png" height={20} width={10} alt="" />
                 </Link>
                 </div>
                 <div className='flex gap-4 sm:gap-10 text-[#FFFFFF]'>

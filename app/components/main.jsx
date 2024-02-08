@@ -80,7 +80,7 @@ function Main() {
               Plan Your Meal
             </button>
           
-          <div className="w-[100%] max-w-[1200px] shadow-base rounded-xl p-4 lg:p-10 bg-white">
+          <div className="w-[100%] max-w-[1200px] rounded-xl p-4 lg:p-10 bg-white" style={{ boxShadow: '0px 12px 24px 0px rgba(0, 0, 0, 0.15)' }}>
             <h1 className=" font-semibold font-atma text-lg sm:text-2xl pb-4 ">
               Choose your food preference
             </h1>

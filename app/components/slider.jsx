@@ -1,4 +1,3 @@
-// components/Carousel.js
 'use client'
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
@@ -6,17 +5,21 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = ({ slides }) => {
-  const [autoplay, setAutoplay] = useState(false);
-  const [slidesToShow, setSlidesToShow] = useState(1);
+  const [slidesToShow, setSlidesToShow] = useState(4); // Default value for slidesToShow
 
   useEffect(() => {
     const handleResize = () => {
-        const isSmallScreen = window.innerWidth < 768;
-        setSlidesToShow(isSmallScreen ? 2 : slides.length);
-        setAutoplay(isSmallScreen);
-      };
+      // Adjust the number of slides to show based on screen size
+      if (window.innerWidth < 768) {
+        setSlidesToShow(2);
+      } else if (window.innerWidth < 1024) {
+        setSlidesToShow(3);
+      } else {
+        setSlidesToShow(4); // Default number of slides for larger screens
+      }
+    };
 
-    // Initial check on component mount
+    // Initial check
     handleResize();
 
     // Add event listener for window resize
@@ -26,22 +29,23 @@ const Carousel = ({ slides }) => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [slides.length]);
+  }, []);
 
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
-    autoplay: autoplay,
-    autoplaySpeed: 3000, // Adjust autoplay speed as needed
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 3000,
+    cssEase: "linear"
   };
 
   return (
     <Slider {...settings}>
       {slides.map((slide, index) => (
-        <div key={index}>{slide}</div>
+        <div key={index} className="text-center justify-between">{slide}</div>
       ))}
     </Slider>
   );

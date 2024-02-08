@@ -1,14 +1,25 @@
 import React from "react";
 import Image from "next/image";
+import Carousel2 from "./carousal";
 function Works() {
   return (
     <>
-      <div className="container mx-auto max-w-[1200px] md:mt-[100px] mt-[200px]">
-        <div className=" flex max-lg:flex-col  max-md:gap-6 px-2 md:max-w-[800px] gap-8 lg:max-w-[900px] xl:max-w-[1200px] mx-auto items-center">
+      <div className="container mx-auto max-w-[1200px] md:mt-[150px] mt-[200px]">
+      
+        <div className="flex w-full px-3 max-lg:hidden overflow-auto gap-8  items-center justify-between xl:mt-0 mt-20 mb-0  lg:mb-20">
+          <Image src="/images/image 8.png" alt="" width={130} height={48} />
+          <Image src="/images/image 9.png" alt="" width={100} height={48} />
+          <Image src="/images/image 10.png" alt="" width={97} height={48} />
+          <Image src="/images/image 11.png" alt="" width={62} height={48} />
+          <Image src="/images/image 12.png" alt="" width={157} height={48} />
+          <Image src="/images/image 13.png" alt="" width={82} height={48} />
+        </div>
+        <div className="w-full px-3  lg:!hidden block overflow-hidden gap-8  items-center justify-between lg:mb-0 mb-20"><Carousel2/></div>
+        <div className=" flex max-lg:flex-col  max-md:gap-6 px-2  gap-8  mx-auto items-center">
           <div className="flex flex-col w-full items-start gap-4">
             <h3 className="font-atma max-md:text-3xl text-5xl font-extrabold">
               How We Automate Your{" "}
-              <span className=" sm:block">Meal Planning</span>
+              <span className=" xl:block">Meal Planning</span>
             </h3>
             <p className="max-w-[580px] font-dm-sans max-md:text-base py-2 text-[#4E4E4E] ">
               Eat This Much creates personalized meal plans based on your food
@@ -17,14 +28,13 @@ function Works() {
               lists and more.
             </p>
             <div className="flex w-full max-sm:flex-col gap-3 font-semibold items-center p-4 rounded-2xl bg-[#FFF1F0]">
-            <Image
-        src="/images/Frame 130.png"
-        alt=""
-        height={32}
-        width={32}
-       
-        className="max-w-full" 
-      />
+              <Image
+                src="/images/Frame 130.png"
+                alt=""
+                height={32}
+                width={32}
+                className="max-w-full"
+              />
               <p className="font-medium font-atma text-base max-sm:text-lg max-sm:text-center leading-[110%]">
                 Turn meal planning into an effortless and magical experience
               </p>
@@ -35,7 +45,6 @@ function Works() {
                 className="max-w-[]"
                 height={32}
                 width={32}
-               
                 alt=""
               />
               <p className="font-medium font-atma text-base max-sm:text-lg max-sm:text-center leading-[110%]">
@@ -130,8 +139,8 @@ function Works() {
                 </div>
                 <p className="text-[#4E4E4E] max-md:text-center text-base font-dm-sans max-md:text-base">
                   Your calorie and macronutrient requirements will automatically
-                  adjust over time based on how {`you\re`} progressing toward your
-                  weight goal, ensuring that your meal plan.
+                  adjust over time based on how {`you\re`} progressing toward
+                  your weight goal, ensuring that your meal plan.
                 </p>
               </div>
               <div className="w-full">
@@ -149,8 +158,8 @@ function Works() {
                 </div>
                 <p className="text-[#4E4E4E] max-md:text-center text-base font-dm-sans max-md:text-base">
                   Based on your school{``}s menu and your personal preferences,
-                  receive a weekly meal plan. This plan balances {`What's`} offered
-                  at school with additional meal suggestions
+                  receive a weekly meal plan. This plan balances {`What's`}{" "}
+                  offered at school with additional meal suggestions
                 </p>
               </div>
             </div>
@@ -180,10 +189,13 @@ function Works() {
             <div className=" max-md:flex-col   gap-10 md:gap-4 max-md:mt-10 mt-20 bg-[#FFEFED]  mx-auto hidden md:flex justify-between">
               <div className="bg-white flex flex-col text-center gap-3 md:gap-4 w-[90%] mx-auto p-4 lg:p-6 rounded-lg relative">
                 <div className="rounded-full bg-white md:w-20 md:h-20 h-14 w-14 flex items-center justify-center absolute shadow-base top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-2">
-                  <Image src="/images/image 9.png"  
-                  height={28}
+                  <Image
+                    src="/images/image 9.png"
+                    height={28}
                     width={60}
-                     className="w-full" alt="" />
+                    className="w-full"
+                    alt=""
+                  />
                 </div>
                 <Image
                   src="/images/Group.png"
@@ -213,13 +225,18 @@ function Works() {
               </div>
               <div className="bg-white flex flex-col text-center gap-3 md:gap-4 w-[90%] mx-auto p-4 lg:p-6 rounded-lg relative">
                 <div className="rounded-full bg-white md:w-20 md:h-20 h-14 w-14 flex items-center justify-center absolute shadow-base top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-2">
-                  <Image src="/images/image 8.png" height={28}
-                    width={60} className="w-full" alt="" />
+                  <Image
+                    src="/images/image 8.png"
+                    height={28}
+                    width={60}
+                    className="w-full"
+                    alt=""
+                  />
                 </div>
                 <Image
                   src="/images/Group.png"
                   height={40}
-                    width={40}
+                  width={40}
                   className="w-[40px] max-md:w-4 mx-auto mt-6 md:mt-11"
                   alt=""
                 />
@@ -244,13 +261,18 @@ function Works() {
               </div>
               <div className="bg-white flex flex-col text-center gap-3 md:gap-4 w-[90%] mx-auto p-4 lg:p-6 rounded-lg relative">
                 <div className="rounded-full bg-white md:w-20 md:h-20 h-14 w-14 flex items-center justify-center absolute shadow-base top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-2">
-                  <Image src="/images/image 11.png" height={28}
-                    width={60} className="w-full" alt="" />
+                  <Image
+                    src="/images/image 11.png"
+                    height={28}
+                    width={60}
+                    className="w-full"
+                    alt=""
+                  />
                 </div>
                 <Image
                   src="/images/Group.png"
                   height={40}
-                    width={40}
+                  width={40}
                   className="w-[40px] max-md:w-4 mx-auto mt-6 md:mt-11"
                   alt=""
                 />
@@ -285,9 +307,9 @@ function Works() {
               Personalized Meal Plan
             </h1>
             <p className="text-[#4E4E4E] font-ds max-md:text-base text-base leading-[150%]">
-              Based on your {`school\s`} menu and your personal preferences, receive
-              a weekly meal plan. This plan balances{`What's`} offered at school
-              with additional meal suggestions to ensure nutritional
+              Based on your {`school\s`} menu and your personal preferences,
+              receive a weekly meal plan. This plan balances{`What's`} offered
+              at school with additional meal suggestions to ensure nutritional
               completeness.
             </p>
             <button className="text-white font-atma text-base hover:bg-black duration-200 max-md:!text-[14px] sm:mt-7 font-semibold  sm:py-4  py-2  leading-[119%] rounded-full  w-[170px] p-2 bg-[#EF4D3C]">
@@ -296,8 +318,20 @@ function Works() {
             </button>
           </div>
           <div className="w-full flex items-center justify-center relative">
-            <Image src="/images/Vector (1).png" width={500} height={360} className="max-md:w-[270px]" alt="" />
-            <Image src="/images/Frame 30.png" height={364} width={510} className="absolute top-3 max-md:w-[300px]" alt="" />
+            <Image
+              src="/images/Vector (1).png"
+              width={500}
+              height={360}
+              className="max-md:w-[270px]"
+              alt=""
+            />
+            <Image
+              src="/images/Frame 30.png"
+              height={364}
+              width={510}
+              className="absolute top-3 max-md:w-[300px]"
+              alt=""
+            />
           </div>
         </div>
       </div>

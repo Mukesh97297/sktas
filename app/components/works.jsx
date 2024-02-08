@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 function Works() {
   return (
     <>
@@ -17,15 +17,25 @@ function Works() {
               lists and more.
             </p>
             <div className="flex w-full max-sm:flex-col gap-3 font-semibold items-center p-4 rounded-2xl bg-[#FFF1F0]">
-              <img src="/images/Frame 130.png" className="max-w-[]" alt="" />
+            <Image
+        src="/images/Frame 130.png"
+        alt=""
+        height={32}
+        width={32}
+       
+        className="max-w-full" 
+      />
               <p className="font-medium font-atma text-base max-sm:text-lg max-sm:text-center leading-[110%]">
                 Turn meal planning into an effortless and magical experience
               </p>
             </div>
             <div className="flex w-full max-sm:flex-col gap-3 font-semibold items-center p-4 rounded-2xl bg-[#FFF1F0]">
-              <img
+              <Image
                 src="/images/Frame 130 (1).png"
                 className="max-w-[]"
+                height={32}
+                width={32}
+               
                 alt=""
               />
               <p className="font-medium font-atma text-base max-sm:text-lg max-sm:text-center leading-[110%]">
@@ -34,9 +44,11 @@ function Works() {
               </p>
             </div>
             <div className="flex w-full max-sm:flex-col gap-3 font-semibold items-center p-4 rounded-2xl bg-[#FFF1F0]">
-              <img
+              <Image
                 src="/images/Frame 130 (2).png"
                 className="max-w-[]"
+                height={32}
+                width={32}
                 alt=""
               />
               <p className="font-medium font-atma text-base max-sm:text-lg max-sm:text-center leading-[110%]">
@@ -52,9 +64,11 @@ function Works() {
             </div>
           </div>
           <div className="w-full text-center">
-            <img
+            <Image
               src="/images/Illustration.png"
               className="text-center mx-auto max-lg:w-3/4"
+              height={590}
+              width={588}
               alt=""
             />
           </div>
@@ -62,13 +76,15 @@ function Works() {
       </div>
       <div id="out-feature" className="pb-36">
         <div className="w-full  relative  lg:pt-30 lg:pb-28">
-          <img
+          <Image
             src="/images/Vector.png"
             className="absolute z-[-1] max-sm:w-20 sm:top-20"
+            height={261}
+            width={150}
             alt=""
           />
         </div>
-        <div className="container mx-auto max-w-[1200px]">
+        <div className=" w mx-auto max-w-[1200px]">
           <div className="flex px-2 w-full bottom-0 flex-col items-center justify-center">
             <h1 className="text-5xl max-md:text-3xl font-atma font-bold">
               Our Features
@@ -82,9 +98,11 @@ function Works() {
             <div className="flex gap-6 max-md:mt-7 max-md:flex-col md:max-w-[800px] justify-between mt-10 lg:max-w-[900px] xl:max-w-[1200px] ">
               <div className="w-full">
                 <div className="flex flex-col md:gap-2 items-start max-md:items-center">
-                  <img
+                  <Image
                     src="/images/calendar.png"
                     alt=""
+                    height={64}
+                    width={64}
                     className="max-md:w -6"
                   />
                   <h2 className="text-2xl my-4 font-atma max-md:text-lg font-extrabold">
@@ -99,8 +117,10 @@ function Works() {
               </div>
               <div className="w-full">
                 <div className="flex flex-col md:gap-2 items-start max-md:items-center">
-                  <img
+                  <Image
                     src="/images/document-filter.png"
+                    height={64}
+                    width={64}
                     alt=""
                     className="max-md:w -6"
                   />
@@ -110,15 +130,17 @@ function Works() {
                 </div>
                 <p className="text-[#4E4E4E] max-md:text-center text-base font-dm-sans max-md:text-base">
                   Your calorie and macronutrient requirements will automatically
-                  adjust over time based on how you're progressing toward your
+                  adjust over time based on how {`you\re`} progressing toward your
                   weight goal, ensuring that your meal plan.
                 </p>
               </div>
               <div className="w-full">
                 <div className="flex flex-col md:gap-2 items-start max-md:items-center">
-                  <img
+                  <Image
                     src="/images/user-tick.png"
                     alt=""
+                    height={64}
+                    width={64}
                     className="max-md:w -6"
                   />
                   <h2 className="text-2xl my-4 font-atma max-md:text-lg font-extrabold">
@@ -126,8 +148,8 @@ function Works() {
                   </h2>
                 </div>
                 <p className="text-[#4E4E4E] max-md:text-center text-base font-dm-sans max-md:text-base">
-                  Based on your school's menu and your personal preferences,
-                  receive a weekly meal plan. This plan balances what's offered
+                  Based on your school{``}s menu and your personal preferences,
+                  receive a weekly meal plan. This plan balances {`What's`} offered
                   at school with additional meal suggestions
                 </p>
               </div>
@@ -136,8 +158,10 @@ function Works() {
         </div>
       </div>
       <div id="client">
-        <img
+        <Image
           src="/images/Vector (3).png"
+          height={190}
+          width={1440}
           className="w-full translate-y-1 "
           alt=""
         />
@@ -156,10 +180,15 @@ function Works() {
             <div className=" max-md:flex-col   gap-10 md:gap-4 max-md:mt-10 mt-20 bg-[#FFEFED]  mx-auto hidden md:flex justify-between">
               <div className="bg-white flex flex-col text-center gap-3 md:gap-4 w-[90%] mx-auto p-4 lg:p-6 rounded-lg relative">
                 <div className="rounded-full bg-white md:w-20 md:h-20 h-14 w-14 flex items-center justify-center absolute shadow-base top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-2">
-                  <img src="/images/image 9.png" className="w-full" alt="" />
+                  <Image src="/images/image 9.png"  
+                  height={28}
+                    width={60}
+                     className="w-full" alt="" />
                 </div>
-                <img
+                <Image
                   src="/images/Group.png"
+                  height={40}
+                  width={40}
                   className="w-[40px] max-md:w-4 mx-auto mt-6 md:mt-11"
                   alt=""
                 />
@@ -184,10 +213,13 @@ function Works() {
               </div>
               <div className="bg-white flex flex-col text-center gap-3 md:gap-4 w-[90%] mx-auto p-4 lg:p-6 rounded-lg relative">
                 <div className="rounded-full bg-white md:w-20 md:h-20 h-14 w-14 flex items-center justify-center absolute shadow-base top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-2">
-                  <img src="/images/image 8.png" className="w-full" alt="" />
+                  <Image src="/images/image 8.png" height={28}
+                    width={60} className="w-full" alt="" />
                 </div>
-                <img
+                <Image
                   src="/images/Group.png"
+                  height={40}
+                    width={40}
                   className="w-[40px] max-md:w-4 mx-auto mt-6 md:mt-11"
                   alt=""
                 />
@@ -212,10 +244,13 @@ function Works() {
               </div>
               <div className="bg-white flex flex-col text-center gap-3 md:gap-4 w-[90%] mx-auto p-4 lg:p-6 rounded-lg relative">
                 <div className="rounded-full bg-white md:w-20 md:h-20 h-14 w-14 flex items-center justify-center absolute shadow-base top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-2">
-                  <img src="/images/image 9.png" className="w-full" alt="" />
+                  <Image src="/images/image 11.png" height={28}
+                    width={60} className="w-full" alt="" />
                 </div>
-                <img
+                <Image
                   src="/images/Group.png"
+                  height={40}
+                    width={40}
                   className="w-[40px] max-md:w-4 mx-auto mt-6 md:mt-11"
                   alt=""
                 />
@@ -250,8 +285,8 @@ function Works() {
               Personalized Meal Plan
             </h1>
             <p className="text-[#4E4E4E] font-ds max-md:text-base text-base leading-[150%]">
-              Based on your school's menu and your personal preferences, receive
-              a weekly meal plan. This plan balances what's offered at school
+              Based on your {`school\s`} menu and your personal preferences, receive
+              a weekly meal plan. This plan balances{`What's`} offered at school
               with additional meal suggestions to ensure nutritional
               completeness.
             </p>
@@ -261,8 +296,8 @@ function Works() {
             </button>
           </div>
           <div className="w-full flex items-center justify-center relative">
-            <img src="/images/Vector (1).png" className="max-md:w-[270px]" alt="" />
-            <img src="/images/Frame 30.png" className="absolute top-3 max-md:w-[300px]" alt="" />
+            <Image src="/images/Vector (1).png" width={500} height={360} className="max-md:w-[270px]" alt="" />
+            <Image src="/images/Frame 30.png" height={364} width={510} className="absolute top-3 max-md:w-[300px]" alt="" />
           </div>
         </div>
       </div>

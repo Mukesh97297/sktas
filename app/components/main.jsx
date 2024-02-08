@@ -39,19 +39,24 @@ function Main() {
       <div className="flex flex-col gap-16">
         <div className="flex flex-col relative">
           <div className="bg-[#FFEFED] flex justify-between items-end h-[620px] sm:h-[770px] md:h-[920px] lg:h-[740px] pt-5   w-full">
-            <img
+            <Image
               src="/images/kisspng-cooked-rice-cm-tm-vietnamese-cuisine-white-ri-5b112949156353 1.png"
+              height={400} width={340}
               className="max-md:w-[80px] md:block hidden"
               alt=""
             />
-            <img
+            <Image
               src="/images/—Pngtree—western food_4652092 1.png"
+              width={300}
+              height={400}
               className="max-md:w-[80px] md:block hidden"
               alt=""
             />
           </div>
-          <img
+          <Image
             src="/images/Exclude.png"
+            width={1440}
+            height={199}
             className="w-full md:block hidden"
             alt=""
           />
@@ -86,8 +91,10 @@ function Main() {
                   key={index}
                   className=" max-sm:w-[31.5%] w-[15.45%] h-[110px] max-sm:h-[55px] cursor-pointer justify-center rounded-lg border border-gray-300 py-4 flex flex-col items-center"
                 >
-                  <img
+                  <Image
                     src={item.image}
+                    height={56}
+                    width={56}
                     className="max-md:w-[28px]"
                     alt={item.alt}
                   />
@@ -114,11 +121,11 @@ function Main() {
                         Calories
                       </p>
                       <div className="flex cursor-pointer w-full gap-2 items-center">
-                        <img
-                          src="/images/Vector.svg "
+                        <Image
+                          src="/images/calculator.png"
                           width={24}
                           height={24}
-                          alt="calculator"
+                          alt=""
                         />
                         <p className="text-[#EF4D3C] flex gap-[1.5px] cursor-pointer text-base leading-[110%] max-md:text-[8px] font-dm-sans ">
                           <span>Not</span>
@@ -141,7 +148,7 @@ function Main() {
                         # Meals
                       </span>
                       <span className=" pointer-events-none absolute inset-y-0 right-0 flex items-center bg-white px-2">
-                        <img
+                        <Image
                           src="/images/Vector (5).png"
                           height={5}
                           width={10}
@@ -166,7 +173,7 @@ function Main() {
                         Select your school
                       </span>
                       <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center bg-white px-2">
-                        <img
+                        <Image
                           src="/images/Vector (5).png"
                           height={5}
                           width={10}
@@ -189,7 +196,7 @@ function Main() {
                         Select location
                       </span>
                       <span className=" pointer-events-none absolute inset-y-0 right-0 flex items-center bg-white px-2">
-                        <img
+                        <Image
                           src="/images/Vector (5).png"
                           height={5}
                           width={10}
